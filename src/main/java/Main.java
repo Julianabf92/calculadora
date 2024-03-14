@@ -1,10 +1,18 @@
-// import static org.junit.jupiter.api.Assertions.assertEquals;
-
-// import org.junit.jupiter.api.Test;
+import java.util.Scanner;
 
 public class Main {
+
+
+  
   public static void main(String[] args) {
-    System.out.println("Hello world!");
+    Scanner ler = new Scanner(System.in);
+    Calculadora calc = new Calculadora();
+    System.out.println("Insira o 1º número: ");
+    int n1 = ler.nextInt();
+    System.out.println("insira o 2º número: ");
+    int n2 = ler.nextInt();
+    
+    calc.soma(n1, n2);
   }
 
   // @Test
